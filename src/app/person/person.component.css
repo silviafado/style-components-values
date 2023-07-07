@@ -1,0 +1,36 @@
+:host {
+  display: block;
+  border: 1px solid red;
+  padding: 1rem 1.618rem;
+  margin: 1.618rem 0;
+}
+
+.hover-area {
+  background: #e4e4b6;
+  padding: 10px 20px;
+}
+
+h1 {
+  font-size: 1.618rem;
+  font-weight: 700;
+  margin-bottom: 0.382em;
+  margin-top: 1.618em;
+}
+
+h1:first-of-type {
+  margin-top: 0;
+}
+
+.comment {
+  color: #666666;
+}
+
+.amount {
+  color: #dd0131;
+}
+
+.amount span {
+  background: #dd0131;
+  color: white;
+  padding: 0.382rem 0.618em;
+}

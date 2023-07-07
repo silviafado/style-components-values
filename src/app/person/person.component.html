@@ -1,0 +1,37 @@
+<h1>Result using manual calculation of full name:</h1>
+<p>
+  Kudos to <strong>{{ fullName }}</strong> for the work she has been doing on
+  Angular!
+</p>
+<p class="amount">
+  Number of times calculated: <span>{{ calculateFullNameCounter }}</span>
+</p>
+
+<h1>Result using getter to calculate full name:</h1>
+<p>
+  Kudos to <strong>{{ fullNameViaGetter }}</strong> for the work she has been
+  doing on Angular!
+</p>
+<p class="amount">
+  Number of times calculated: <span>{{ fullNameViaGetterCounter }}</span>
+</p>
+
+<h1>Result using pure pipe to calculate full name:</h1>
+<p>
+  Kudos to <strong>{{ person | fullName }}</strong> for the work she has been
+  doing on Angular!
+</p>
+<p class="amount">
+  Number of times calculated: <span>{{ calculateFullNameCounter }}</span>
+</p>
+
+<h1>Trigger change detection</h1>
+<p (mouseover)="onMouseOver()" (mouseout)="onMouseOut()" class="hover-area">
+  Hover your mouse here to trigger mouseover and mouseout
+</p>
+<p (mousemove)="onMouseMove()" class="hover-area">
+  Hover your mouse here to trigger mousemove
+</p>
+<button (click)="onUnrelatedClick()">
+  Do something unrelated inside PersonComponent
+</button>
